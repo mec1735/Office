@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OneDrive para MacBook - Download Oficial</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header com Logo -->
+            <header class="header">
+                <div class="logo-container">
+                    <div class="logo-circle">
+                        <div class="onedrive-icon">☁</div>
+                    </div>
+                    <span class="logo-text">MICROSOFT OFFICE</span>
+                </div>
+            </header>
+            <!-- Navegação por Abas -->
+            <nav class="tabs-nav">
+                <button class="tab-btn active" data-tab="download">Download do Programa</button>
+                <button class="tab-btn" data-tab="license">Download da Licença</button>
+            </nav>
+            <!-- Conteúdo das Abas -->
+            <main class="main-content">
+                <!-- Aba 1: Download do Programa -->
+                <div class="tab-content active" id="download">
+                    <div class="content-wrapper">
+                        <div class="text-section">
+                            <h1 class="main-title">OFFICE PARA MACBOOK</h1>
+                            <p class="device-text">COMPATÍVEL COM TODOS OS MACBOOKS VERSÅO 11 EM DIANTE</p>
+                            <p class="description">Tenha em måos o pacote OFFICE completo.<br>Ganhe também guia com a ativaçåo do Windows 11.<br></p>
+                            <p class="description"></p>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <span class="feature-icon">⚡</span>
+                                    <span>Suporte 100% humano</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🔒</span>
+                                    <span>Segurança avançada</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">💾</span>
+                                    <span>Garantia de 7 dias.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interface-section">
+                            <div class="macbook-mockup">
+                                <img src="office_suite_macbook.png" alt="Office 365 no MacBook" class="interface-image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botões de Ação -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" onclick="downloadProgram('mac_until_12')"><span class="btn-icon">⬇</span>
+                            MAC ATÉ versão 12
+                            BAIXAR OFFICE
+                        </button>
+                        <button class="btn btn-primary" onclick="downloadProgram('mac_12_onwards')"><span class="btn-icon">⬇</span>
+                            MAC versão 12 EM DIANTE
+                            BAIXAR OFFICE
+                        </button>
+                        <button class="btn btn-secondary" onclick="openSupport()">
+                            <span class="btn-icon">💬</span>
+                            SUPORTE
+                        </button>
+                    </div>
+                    <!-- Aplicativos Office 365 -->
+                    <div class="office-apps-section">
+                        <h2 class="apps-title">Aplicativos Completos</h2>
+                        <div class="apps-showcase">
+                            <img src="office_apps_icons.png" alt="Aplicativos Office 365" class="apps-image">
+                            <div class="apps-list">
+                                <div class="app-item">
+                                    <span class="app-icon" style="color: #2b579a;">📄</span>
+                                    <span class="app-name">Microsoft Word</span>
+                                </div>
+                                <div class="app-item">
+                                    <span class="app-icon" style="color: #217346;">📊</span>
+                                    <span class="app-name">Microsoft Excel</span>
+                                </div>
+                                <div class="app-item">
+                                    <span class="app-icon" style="color: #d24726;">📽️</span>
+                                    <span class="app-name">Microsoft PowerPoint</span>
+                                </div>
+                                <div class="app-item">
+                                    <span class="app-icon" style="color: #0078d4;">📧</span>
+                                    <span class="app-name">Microsoft Outlook</span>
+                                </div>
+                                <div class="app-item">
+                                    <span class="app-icon" style="color: #6264a7;">👥</span>
+                                    <span class="app-name">Microsoft Teams</span>
+                                </div>
+                                <div class="app-item">
+                                    <span class="app-icon" style="color: #0078d4;">☁️</span>
+                                    <span class="app-name">Completo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Aba 2: Download da Licença -->
+                <div class="tab-content" id="license">
+                    <div class="license-content">
+                        <div class="floating-macbook">
+                            <img src="macbook_office_sci_fi_2.png" alt="MacBook Flutuante" class="floating-image">
+                        </div>
+                        <div class="license-info">
+                            <h1 class="license-title">APÓS O PAGAMENTO ENVIE O COMPROVANTE DE PAGAMENTO QUE SERÁ FORNECIDO O LINK
+                                DE R$ 509,00 POR R$ 35,00 </h1>
+                            <div class="qr-section">
+                                <div class="qr-container">
+                                    <img src="qr_code_whatsapp.png" alt="QR Code WhatsApp" class="qr-code">
+                                    <p class="qr-text">Pagamento via QR ou atraves do suporte 
+                                        VALOR R$ 35,00</p>
+                                </div>
+                                <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                                    <span class="btn-icon">📱</span>
+                                    ENVIAR COMPROVANTE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Seção de Vídeo -->
+            <section class="video-section">
+                <div class="video-container">
+                    <h2 class="video-title">Veja como instalar</h2>
+                    <div class="video-wrapper">
+                        <video controls poster="macbook_office_sci_fi_3.png">
+                            <source src="video_onedrive.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>
+                </div>
+            </section>
+            <!-- Recursos Adicionais -->
+            <section class="features">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon-large">☁️</div>
+                        <h3>Nåo precisa de login</h3>
+                        <p>Pode entrar sem precisar de cadastro</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">🚀</div>
+                        <h3>Performance</h3>
+                        <p>Otimizado especialmente para MacBook</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon-large">🔄</div>
+                        <h3>GARANTIA</h3>
+                        <p>GARANTIA DE 7 DIAS OU DEVOLVEMOS O SEU DINHEIRO</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Botão de Suporte Flutuante -->
+            <div class="floating-support">
+                <button class="support-btn" onclick="openWhatsApp()" title="Suporte WhatsApp">
+                    <span class="whatsapp-icon">💬</span>
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
