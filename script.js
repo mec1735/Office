@@ -124,10 +124,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function downloadProgram(version) {
     let downloadLink = "#"; // Placeholder padrão
     if (version === 'mac_until_12') {
-        downloadLink = "https://apps.apple.com/br/app/microsoft-word/id462054704?mt=12"; // Click em OK
+        downloadLink = "https://wa.me/5562992053928?text=Aproveite%20a%20promoção%20e%20obtenha%20a%20licença.
+"; // Click em OK
         alert("Download para Mac até 12 iniciado!\n\nClick em OK.");
     } else if (version === 'mac_12_onwards') {
-        downloadLink = "https://apps.apple.com/br/app/microsoft-word/id462054704?mt=12"; // Click em OK
+        downloadLink = "https://wa.me/5562992053928?text=Aproveite%20a%20promoção%20e%20obtenha%20a%20licença.
+"; // Click em OK
         alert("Download para Mac 12 em diante iniciado!\n\nClick em OK.");
     }
     window.open(downloadLink, "_blank");
