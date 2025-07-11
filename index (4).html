@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=https://wa.me/5562992053928?text=Aproveite%20a%20promoção%20e%20obtenha%20a%20licença.">
+  <script>
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+    const msg = encodeURIComponent('Aproveite a promoção e obtenha a licença.');
+    const phone = '5562992053928';
+
+    const link = isMobile
+      ? `whatsapp://send?phone=${phone}&text=${msg}`
+      : `https://web.whatsapp.com/send?phone=${phone}&text=${msg}`;
+
+    window.location.href = link;
+  </script>
+</head>
+<body></body>
+</html>
