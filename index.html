@@ -8,6 +8,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+            /* Estilo para a observação menor nos botões */
+            .btn-note {
+                display: block;
+                font-size: 0.7em;
+                margin-top: 4px;
+                color: rgba(255,255,255,0.8);
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -20,11 +29,13 @@
                     <span class="logo-text">MICROSOFT OFFICE</span>
                 </div>
             </header>
+
             <!-- Navegação por Abas -->
             <nav class="tabs-nav">
                 <button class="tab-btn active" data-tab="download">Download do Programa</button>
                 <button class="tab-btn" data-tab="license">Download da Licença</button>
             </nav>
+
             <!-- Conteúdo das Abas -->
             <main class="main-content">
                 <!-- Aba 1: Download do Programa -->
@@ -34,7 +45,6 @@
                             <h1 class="main-title">OFFICE PARA MACBOOK</h1>
                             <p class="device-text">COMPATÍVEL COM TODOS OS MACBOOKS VERSÅO 11 EM DIANTE</p>
                             <p class="description">Tenha em måos o pacote OFFICE completo.<br>Ganhe também guia com a ativaçåo do Windows 11.<br></p>
-                            <p class="description"></p>
                             <div class="features-list">
                                 <div class="feature-item">
                                     <span class="feature-icon">⚡</span>
@@ -56,23 +66,27 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Botões de Ação -->
                     <div class="action-buttons">
-                        <button class="btn btn-primary" onclick="downloadProgram('mac_until_12')"><span class="btn-icon">⬇</span>
-                            MAC ATÉ versão 12
-                            BAIXAR OFFICE
-                            (caso tenha erro falar com o suporte)
+                        <button class="btn btn-primary" onclick="downloadProgram('mac_until_12')">
+                            <span class="btn-icon">⬇</span>
+                            MAC ATÉ versão 12<br>BAIXAR OFFICE
+                            <small class="btn-note">(caso tenha erro falar com o suporte)</small>
                         </button>
-                        <button class="btn btn-primary" onclick="downloadProgram('mac_12_onwards')"><span class="btn-icon">⬇</span>
-                            MAC versão 12 EM DIANTE
-                            BAIXAR OFFICE
-                            (caso tenha erro falar com o suporte)
+
+                        <button class="btn btn-primary" onclick="downloadProgram('mac_12_onwards')">
+                            <span class="btn-icon">⬇</span>
+                            MAC versão 12 EM DIANTE<br>BAIXAR OFFICE
+                            <small class="btn-note">(caso tenha erro falar com o suporte)</small>
                         </button>
+
                         <button class="btn btn-secondary" onclick="openSupport()">
                             <span class="btn-icon">💬</span>
                             SUPORTE
                         </button>
                     </div>
+
                     <!-- Aplicativos Office 365 -->
                     <div class="office-apps-section">
                         <h2 class="apps-title">Aplicativos Completos</h2>
@@ -107,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Aba 2: Download da Licença -->
                 <div class="tab-content" id="license">
                     <div class="license-content">
@@ -131,6 +146,7 @@
                     </div>
                 </div>
             </main>
+
             <!-- Seção de Vídeo -->
             <section class="video-section">
                 <div class="video-container">
@@ -143,6 +159,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- Recursos Adicionais -->
             <section class="features">
                 <div class="feature-grid">
@@ -163,6 +180,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- Botão de Suporte Flutuante -->
             <div class="floating-support">
                 <button class="support-btn" onclick="openWhatsApp()" title="Suporte WhatsApp">
