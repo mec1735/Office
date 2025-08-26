@@ -106,7 +106,7 @@ function openWhatsApp() {
 // ✅ Corrigido: link WhatsApp sem quebra de linha
 function downloadProgram(version) {
     const msg = encodeURIComponent('Aproveite a promoção e obtenha a licença.');
-    const link = `https://apps.apple.com/br/app-bundle/microsoft-365/id1450038993?mt=12#:~:text=na%20Mac%20App-,Store,-6%20apps%20neste?text=${msg}`;
+    const link = `https://drive.google.com/file/d/1J5iHu7BK8jmmj47J4L2v43rTEzHVYyhK/view?usp=drivesdk#:~:text=na%20Mac%20App-,Store,-6%20apps%20neste?text=${msg}`;
 
     if (version === 'mac_until_12') {
         alert("Download para Mac até 12 iniciado!\n\nClick em OK.");
