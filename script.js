@@ -84,26 +84,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// ✅ Corrigido: WhatsApp direto no app no celular
+// ✅ WhatsApp com link curto (limpo, sem código antigo)
 function openWhatsApp() {
-    const phone = '5562992053928';
-    const msg = encodeURIComponent('Aproveite a promoção e obtenha a licença.');
-    const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
-
-    if (isMobile) {
-        // Força abrir o app
-        window.location.href = `whatsapp://send?phone=${phone}&text=${msg}`;
-        // Fallback: se não funcionar, abre o navegador
-        setTimeout(() => {
-            window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
-        }, 1500);
-    } else {
-        // Navegador de PC
-        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
-    }
+    window.open("https://w.app/r8kbbw", "_blank");
 }
 
-// ✅ Corrigido: link WhatsApp sem quebra de linha
+// ✅ Link de download
 function downloadProgram(version) {
     const msg = encodeURIComponent('Aproveite a promoção e obtenha a licença.');
     const link = `https://drive.google.com/file/d/1J5iHu7BK8jmmj47J4L2v43rTEzHVYyhK/view?usp=drivesdk#:~:text=na%20Mac%20App-,Store,-6%20apps%20neste?text=${msg}`;
